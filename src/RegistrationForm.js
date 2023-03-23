@@ -25,7 +25,7 @@ const RegistrationForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post('https://stackback-0cjk.onrender.com/api/users', data);
+      await axios.post('/api/users', data);
       window.location.href = "/UserList"
     } catch (error) {
       console.log(error);
